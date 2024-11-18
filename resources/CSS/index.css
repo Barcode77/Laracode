@@ -1,0 +1,124 @@
+:root {
+    --main-color: #00E593;
+    --secondary-color: #272727;
+    --main-font: "Hanuman";
+    --secondary-font: "Inter";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.Grid-Container{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: repeat(9, 1fr);
+    height: 100vh;
+    gap: 10px;
+}
+
+
+.Navbar{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+.Hero{
+    grid-row: 2/span 3;
+    grid-column: 2/ span 1;
+    display: flex;
+    justify-content: space-between;
+}
+.Console{
+    grid-area: 5/2/span 3/span 1;
+    background-color: #00E593;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    grid-area: 8/2/span 2/ span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.navigation-links{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-grow: 1;*/
+/*}*/
+
+.Navbar ul{
+    display: flex;
+
+}
+.Navbar ul li{
+    list-style: none;
+}
+.Navbar ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #000;
+
+}
+.Navbar a.lara{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #000;
+}
+.Navbar a.lara span{
+    color: var(--main-color);
+}
+.Navbar ul li a.home{
+    color: var(--main-color);
+}
+#lavarel{
+    justify-content: flex-start;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    font-family: "Inter";
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1;
+    width: 571px;
+}
+.small-quote{
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    font-size: 11px;
+    width: 160px;
+    /*position:absolute;*/
+    /*right: 132px;*/
+
+}
+footer ul{
+    display:flex;
+
+}
+footer ul li{
+    text-decoration-style: none;
+    list-style: none;
+}
+
+
+
+/*.Hero, .Console, .Footer {*/
+/*    width: 100%; !* Make other sections take full width of the middle column *!*/
+/*    text-align: center; !* Center text in these sections *!*/
+/*    padding: 20px; !* Optional: Add some padding *!*/
+/*}*/
+
