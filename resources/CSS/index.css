@@ -20,7 +20,7 @@ html, body {
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: repeat(9, 1fr);
     height: 100vh;
-    gap: 10px;
+    /*gap: 10px;*/
 }
 
 
@@ -47,12 +47,36 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+.empty-console{
+    grid-row: 5/span 3;
+    grid-column: 1/1;
+    background-color: var(--main-color);
+}
+.empty-c-end{
+    grid-row: 5/span 3;
+    grid-column: 3/3;
+    background-color: var(--main-color);
+}
+
 footer{
     grid-area: 8/2/span 2/ span 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
 }
+.empty-footer{
+    background-color:var(--secondary-color);
+    grid-row: 8/span 2;
+    grid-column: 1/1;
+}
+.empty-footer-end{
+    background-color: var(--secondary-color);
+    grid-row: 8/span 2;
+    grid-column: 3/3;
+}
+
 
 /*.navigation-links{*/
 /*    display: flex;*/
@@ -84,6 +108,7 @@ footer{
 .Navbar ul li a.home{
     color: var(--main-color);
 }
+
 #lavarel{
     justify-content: flex-start;
     display: flex;
